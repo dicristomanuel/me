@@ -5,6 +5,7 @@ body {
   padding: 0;
   font-family: 'Open Sans', sans-serif;
   color: white;
+  background: #64aaa3;
 }
 
 a {
@@ -125,13 +126,10 @@ bpop-square#with-border {
 }
 
 bpop-tech p {
-  /*text-align: justify;
-  text-justify: inter-word;*/
   max-width: 20vw;
   font-weight: 300;
   align-self: center;
   font-size: 1.3vw;
-  /*margin-bottom: 5vw;*/
 }
 
 bpop-tech p span {
@@ -165,7 +163,6 @@ bpop-title {
   margin-top: 1vw;
   font-weight: bold;
   font-size: 2vw;
-  /*width: 30vw;*/
   align-self: center;
   border-bottom: 1px solid white;
 }
@@ -173,10 +170,6 @@ bpop-title {
 icons {
   display: flex;
   width: 30vw;
-}
-
-icons img {
-
 }
 
 
@@ -197,9 +190,9 @@ third-section {
   justify-content: center;
   background: #64aaa3;
   width: 100vw;
-  height: 100vh;
   overflow: hidden;
 }
+
 
 jump {
   display: flex;
