@@ -9,6 +9,7 @@ body {
 
 a {
   color: white;
+  text-decoration: none;
 }
 
 first-section {
@@ -108,7 +109,7 @@ bpop-tech {
   width: 48vw;
   height: 48vw;
   margin: 5vw 4vw 0 0;
-  border: 5px solid rgb(214, 214, 214);
+  border: 2px solid rgb(214, 214, 214);
 }
 
 bpop-square {
@@ -119,7 +120,7 @@ bpop-square {
   min-height: 23vw;
 }
 
-#with-border {
+bpop-square#with-border {
   border-right: 1px solid white;
 }
 
@@ -225,6 +226,12 @@ projects {
   align-self: center;
   width: 80vw;
   height: 20vw;
+}
+
+projects a p {
+  border: none;
+  font-size: 1vw;
+  margin-left: 4.5vw;
 }
 
 dela {
