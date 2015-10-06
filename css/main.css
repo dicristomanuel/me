@@ -4,6 +4,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Open Sans', sans-serif;
+  color: white;
 }
 
 a {
@@ -12,25 +13,33 @@ a {
 
 first-section {
   display: flex;
-  background-image: url('../img/first-section.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 100vh;
+  justify-content: center;
+  background-color: black;
+  height: auto;
   width: 100vw;
   overflow: hidden;
+}
+
+me-first {
+  display: flex;
+  background: url('../img/pic-first-section.jpg') right no-repeat;
+  background-size: contain;
+  width: 18vw;
+  height: 50vw;
+  margin-top: 5vw;
+  margin-right: 2vw;
 }
 
 first-section text {
   display: flex;
   flex-direction: column;
   color: white;
-  margin: 7vw 0 0 50vw;
+  margin-top: 7vw;
   font-size: 2vw;
   text-align: center;
 }
 
 first-section text div {
-  /*margin-bottom: .4vw;*/
   align-self: center;
 }
 
@@ -86,12 +95,96 @@ text socials{
 
 second-section {
   display: flex;
-  background-image: url('../img/second-section.jpg');
+  justify-content: flex-end;
+  width: 100vw;
+  background: #404040;
+  overflow: hidden;
+}
+
+
+bpop-tech {
+  display: flex;
+  flex-wrap: wrap;
+  width: 48vw;
+  height: 48vw;
+  margin: 5vw 4vw 0 0;
+  border: 5px solid rgb(214, 214, 214);
+}
+
+bpop-square {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  min-width: 23.84vw;
+  min-height: 23vw;
+  border: 1px solid white;
+}
+
+bpop-tech p {
+  /*text-align: justify;
+  text-justify: inter-word;*/
+  max-width: 20vw;
+  font-weight: 300;
+  align-self: center;
+  font-size: 1.3vw;
+  /*margin-bottom: 5vw;*/
+}
+
+bpop-tech p span {
+  font-weight:bold;
+  font-size:2vw
+}
+
+icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  max-width: 21vw;
+  margin-bottom: 1vw;
+}
+
+icons img {
+  width: 5vw;
+  height: 100%;
+}
+
+bpop-square#bpop-example1 {
+  display: flex;
+  background-image: url("../img/bpop-example1.png");
   background-size: cover;
   background-repeat: no-repeat;
-  width: 100vw;
-  height: 100vh;
-  overflow: hidden;
+  width: 48vw;
+
+}
+
+bpop-title {
+  margin-top: 1vw;
+  font-weight: bold;
+  font-size: 2vw;
+  /*width: 30vw;*/
+  align-self: center;
+  border-bottom: 1px solid white;
+}
+
+icons {
+  display: flex;
+  width: 30vw;
+}
+
+icons img {
+
+}
+
+
+me-second {
+  display: flex;
+  background: url('../img/pic-second-section.jpg') right no-repeat;
+  justify-content: center;
+  background-size: contain;
+  width: 40vw;
+  margin-top: 10vw;
+  margin-bottom: -2vw;
+  height: 50vw;
 }
 
 third-section {
