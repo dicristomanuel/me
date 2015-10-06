@@ -117,7 +117,10 @@ bpop-square {
   flex-direction: column;
   min-width: 23.84vw;
   min-height: 23vw;
-  border: 1px solid white;
+}
+
+#with-border {
+  border-right: 1px solid white;
 }
 
 bpop-tech p {
