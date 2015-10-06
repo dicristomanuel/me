@@ -6,6 +6,10 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
+a {
+  color: white;
+}
+
 first-section {
   display: flex;
   background-image: url('../img/first-section.jpg');
@@ -20,15 +24,16 @@ first-section text {
   display: flex;
   flex-direction: column;
   color: white;
-  margin: 8vw 0 0 50vw;
+  margin: 7vw 0 0 50vw;
   font-size: 2vw;
   text-align: center;
 }
 
-first-section text span {
+first-section text div {
   /*margin-bottom: .4vw;*/
   align-self: center;
 }
+
 
 #first {
   font-size: 3.2vw;
@@ -39,19 +44,43 @@ first-section text span {
   font-weight: bold;
   font-size: 2.1vw;
   font-family: 'Roboto', sans-serif;
+  margin-top: -.5vw;
 }
 
 #third {
-  margin-top: 2vw;
-  font-size: 2.3vw;
+  font-size: 2.36vw;
+  margin-top: -.5vw;
+  width: 18.45vw;
 }
 
 #fourth {
   font-size: 1.5vw;
   max-width: 17.7vw;
-  margin-top: 1vw;
+  margin-top: 2vw;
   text-align: justify;
   text-justify: inter-word;
+}
+
+#fifth {
+  font-size: 1.5vw;
+  max-width: 17.7vw;
+  margin-top: 3vw;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+#fifth span {
+  font-size: 1.77vw;
+}
+
+text socials{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 2vw;
+  width: 17.7vw;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  padding: 1vw 0;
 }
 
 
@@ -91,8 +120,8 @@ p {
   align-self: center;
   font-family: 'Roboto', sans-serif;
   font-size: 1.5vw;
-
 }
+
 
 projects {
   display: flex;
