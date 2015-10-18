@@ -24,6 +24,7 @@ a {
   height: auto;
   width: 100vw;
   overflow: hidden;
+  padding: 1vw;
 }
 
 .first-section .me-first {
@@ -66,7 +67,7 @@ a {
 #second {
   color: #FF2D88;
   font-weight: bold;
-  font-size: 2.1vw;
+  font-size: 2.07vw;
   font-family: 'Roboto', sans-serif;
   margin-top: -.5vw;
 }
@@ -94,7 +95,7 @@ a {
 }
 
 #fifth span {
-  font-size: 1.77vw;
+  font-size: 1.75vw;
 }
 
 .text .socials{
@@ -186,7 +187,7 @@ a {
   height: 100%;
 }
 
-.bpop-square#bpop-example1 {
+#bpop-example1 {
   display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
   display: -ms-flexbox;  /* TWEENER - IE 10 */
   display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
@@ -195,7 +196,6 @@ a {
   background-size: cover;
   background-repeat: no-repeat;
   width: 48vw;
-
 }
 
 .bpop-title {
