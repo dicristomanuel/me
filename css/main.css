@@ -24,7 +24,6 @@ a {
   height: auto;
   width: 100vw;
   overflow: hidden;
-  padding: 2vw;
 }
 
 .first-section .me-first {
@@ -51,7 +50,7 @@ a {
   align-items: center;
   -webkit-align-items: center;
   color: white;
-  margin-top: 3vw;
+  margin: 3vw 0;
   font-size: 2vw;
 }
 
