@@ -38,6 +38,7 @@ a {
   height: 50vw;
   margin-top: 5vw;
   margin-right: 2vw;
+  margin-left: -5vw;
 }
 
 .first-section .text {
@@ -137,6 +138,7 @@ a {
   height: 47.5vw;
   margin: 5vw 4vw 0 0;
   border: 2px solid rgb(214, 214, 214);
+  overflow: hidden;
 }
 
 .bpop-square {
@@ -149,7 +151,7 @@ a {
   flex-direction: column;
   -webkit-flex-direction: column;
   min-width: 23.84vw;
-  min-height: 23vw;
+  height: 24vw;
 }
 
 .bpop-square#with-border {
@@ -177,7 +179,10 @@ a {
   justify-content: space-around;
   -webkit-justify-content: space-around;
   align-items: flex-end;
-  align--webkit-align-items-end;
+  -webkit-align-items: flex-end;
+  align-self: center;
+  -webkit-align-self: center;
+
   max-width: 21vw;
   margin-bottom: 1vw;
 }
