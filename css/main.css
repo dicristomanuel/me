@@ -1,10 +1,11 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600|Roboto:400,100,500|Quicksand:400,300,700|Varela);
+/* add prefixes */
 
 body {
   margin: 0;
   padding: 0;
   font-family: 'Open Sans', sans-serif;
-  color: rgb(238, 237, 237);
+  color: #eeeded;
   background: #64aaa3;
 }
 
@@ -18,6 +19,7 @@ a {
   display: -ms-flexbox;  /* TWEENER - IE 10 */
   display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
   display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
+
   justify-content: center;
   -webkit-justify-content: center;
   background-color: black;
@@ -26,21 +28,17 @@ a {
   overflow: hidden;
 }
 
-.first-section .me-first {
-  display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
-  display: -ms-flexbox;  /* TWEENER - IE 10 */
-  display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
-  display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
+.first-section .first-pic {
   background: url('../img/pic-first-section.jpg') right no-repeat;
   background-size: contain;
   width: 18vw;
   height: 50vw;
   margin-top: 5vw;
   margin-right: 2vw;
-  margin-left: -5vw;
 }
 
-.first-section .text {
+.first-section .content {
+  list-style-type: none;
   display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
   display: -ms-flexbox;  /* TWEENER - IE 10 */
   display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
@@ -54,14 +52,12 @@ a {
   font-size: 2vw;
 }
 
-.first-section .text div {
-  align-self: center;
-  -webkit-align-self: center;
+.first-section .content li {
+  margin: 3px 0;
 }
 
-
 #first {
-  font-size: 3.2vw;
+  font-size: 2.25vw;
 }
 
 #second {
@@ -81,7 +77,6 @@ a {
 #fourth {
   font-size: 1.5vw;
   max-width: 17.7vw;
-  margin-top: 2vw;
   text-align: justify;
   text-justify: inter-word;
 }
@@ -89,7 +84,6 @@ a {
 #fifth {
   font-size: 1.5vw;
   max-width: 17.7vw;
-  margin-top: 3vw;
   text-align: justify;
   text-justify: inter-word;
 }
@@ -98,14 +92,14 @@ a {
   font-size: 1.75vw;
 }
 
-.text .socials{
+.content .socials{
   display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
   display: -ms-flexbox;  /* TWEENER - IE 10 */
   display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
   display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
   justify-content: space-around;
   -webkit-justify-content: space-around;
-  margin-top: 2vw;
+  font-size: 25px;
   width: 17.7vw;
   border-top: 1px solid white;
   border-bottom: 1px solid white;
