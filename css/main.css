@@ -30,14 +30,15 @@ a {
 
 .first-section .first-pic {
   background: url('../img/pic-first-section.jpg') right no-repeat;
-  background-size: contain;
-  width: 18vw;
-  height: 50vw;
-  margin-top: 5vw;
-  margin-right: 2vw;
+  background-size: cover;
+  width: 180px;
+  height: 550px;
+  margin-top: 40px;
+  margin-right: 20px;
 }
 
 .first-section .content {
+  width: 200px;
   list-style-type: none;
   display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
   display: -ms-flexbox;  /* TWEENER - IE 10 */
@@ -53,43 +54,48 @@ a {
 }
 
 .first-section .content li {
-  margin: 3px 0;
+  margin: 5px 0;
+  width: 100%;
 }
 
 #first {
-  font-size: 2.25vw;
+  font-size: 24.1px;
 }
 
 #second {
   color: #FF2D88;
   font-weight: bold;
-  font-size: 2.07vw;
+  font-size: 22.4px;
   font-family: 'Roboto', sans-serif;
   margin-top: -.5vw;
 }
 
-#third {
-  font-size: 2.36vw;
+#third-a {
+  font-size: 29px;
   margin-top: -.5vw;
-  width: 18.45vw;
+}
+
+#third-b {
+  letter-spacing: 15px;
+  margin: -11px 0 -4px 0;
+  font-size: 23px;
 }
 
 #fourth {
-  font-size: 1.5vw;
-  max-width: 17.7vw;
+  font-size: 15px;
   text-align: justify;
   text-justify: inter-word;
 }
 
 #fifth {
-  font-size: 1.5vw;
-  max-width: 17.7vw;
+  font-size: 15px;
   text-align: justify;
   text-justify: inter-word;
 }
 
 #fifth span {
-  font-size: 1.75vw;
+  font-size: 18.9px;
+  letter-spacing: 0.5px;
 }
 
 .content .socials{
@@ -100,10 +106,10 @@ a {
   justify-content: space-around;
   -webkit-justify-content: space-around;
   font-size: 25px;
-  width: 17.7vw;
   border-top: 1px solid white;
   border-bottom: 1px solid white;
   padding: 1vw 0;
+  width: 100%;
 }
 
 
