@@ -15,14 +15,9 @@ a {
 }
 
 .first-section {
-  display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
-  display: -ms-flexbox;  /* TWEENER - IE 10 */
-  display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
-  display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
-
+  display: flex;
   justify-content: center;
   align-items: center;
-  -webkit-justify-content: center;
   background-color: black;
   height: auto;
   width: 100vw;
@@ -33,69 +28,58 @@ a {
 
 .first-section .first-pic {
   background: url('../img/pic-first-section.jpg') right no-repeat;
-  background-size: cover;
-  width: 180px;
-  height: 550px;
-  margin-top: 40px;
-  margin-right: 20px;
+  background-size: contain;
+  width: 190px;
+  height: 100vh;
 }
 
 .first-section .content {
   width: 230px;
   list-style-type: none;
-  display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
-  display: -ms-flexbox;  /* TWEENER - IE 10 */
-  display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
-  display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
+  display: flex;
   flex-direction: column;
-  -webkit-flex-direction: column;
-  align-items: center;
-  -webkit-align-items: center;
   color: white;
-  margin: 3vw 0;
-  font-size: 2vw;
+  margin: 0 10px;
+  height: 100%;
+  justify-content: center;
+  padding-left: 0;
 }
 
 .first-section .content li {
-  margin: 5px 0;
   width: 100%;
 }
 
-#first { font-size: 27.4px }
+#first { font-size: 6.2vw }
 
 #second {
   color: #FF2D88;
   font-weight: bold;
-  font-size: 25.7px;
-  font-family: 'Roboto', sans-serif;
-  margin-top: -.5vw;
+  font-size: 5.5vw;
 }
 
 #third-a {
-  font-size: 33.2px;
-  margin-top: -.5vw;
+  font-size: 7.4vw;
+  margin-top: -4px;
 }
 
 #third-b {
-  letter-spacing: 15px;
-  margin: -11px 0 -4px 0;
-  font-size: 29.5px;
+  font-size: 7.6vw;
+  letter-spacing: 2.5vw;
+  margin-top: -7px;
 }
 
 #fourth {
-  font-size: 18px;
+  font-size: 4.1vw;
   text-align: justify;
-  text-justify: inter-word;
 }
 
 #fifth {
-  font-size: 17px;
+  font-size: 4.2vw;
   text-align: justify;
-  text-justify: inter-word;
 }
 
 #fifth span {
-  font-size: 21.8px;
+  font-size: 4.8vw;
   letter-spacing: 0.5px;
 }
 
@@ -109,266 +93,8 @@ a {
   font-size: 25px;
   border-top: 1px solid white;
   border-bottom: 1px solid white;
-  padding: 1vw 0;
-  width: 100%;
-}
-
-
-.second-section {
-  display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
-  display: -ms-flexbox;  /* TWEENER - IE 10 */
-  display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
-  display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
-  justify-content: flex-end;
-  -webkit-justify-content: flex-end;
-  width: 100vw;
-  background: #404040;
-  overflow: hidden;
-}
-
-
-.bpop-tech {
-  display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
-  display: -ms-flexbox;  /* TWEENER - IE 10 */
-  display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
-  display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
-  flex-wrap: wrap;
-  -webkit-flex-wrap: wrap;
-  width: 48vw;
-  height: 47.5vw;
-  margin: 5vw 4vw 0 0;
-  border: 2px solid rgb(214, 214, 214);
-  overflow: hidden;
-}
-
-.bpop-square {
-  display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
-  display: -ms-flexbox;  /* TWEENER - IE 10 */
-  display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
-  display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
-  justify-content: center;
-  -webkit-justify-content: center;
-  flex-direction: column;
-  -webkit-flex-direction: column;
-  min-width: 23.84vw;
-  height: 24vw;
-}
-
-.bpop-square#with-border {
-  border-right: 1px solid white;
-}
-
-.bpop-tech p {
-  max-width: 20vw;
-  font-weight: 300;
-  align-self: center;
-  -webkit-align-self: center;
-  font-size: 1.3vw;
-}
-
-.bpop-tech p span {
-  font-weight:bold;
-  font-size:2vw
-}
-
-.icons {
-  display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
-  display: -ms-flexbox;  /* TWEENER - IE 10 */
-  display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
-  display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
-  justify-content: space-around;
-  -webkit-justify-content: space-around;
-  align-items: flex-end;
-  -webkit-align-items: flex-end;
-  align-self: center;
-  -webkit-align-self: center;
-
-  max-width: 21vw;
-  margin-bottom: 1vw;
-}
-
-.icons img {
-  width: 4.5vw;
-  height: 100%;
-}
-
-#bpop-example1 {
-  display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
-  display: -ms-flexbox;  /* TWEENER - IE 10 */
-  display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
-  display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
-  background-image: url("../img/bpop-example1.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 48vw;
-}
-
-.bpop-title {
-  margin-top: 1vw;
-  font-weight: bold;
-  font-size: 2vw;
-  align-self: center;
-  -webkit-align-self: center;
-  border-bottom: 1px solid white;
-}
-
-.icons {
-  display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
-  display: -ms-flexbox;  /* TWEENER - IE 10 */
-  display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
-  display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
-  width: 30vw;
-}
-
-
-.me-second {
-  display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
-  display: -ms-flexbox;  /* TWEENER - IE 10 */
-  display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
-  display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
-  background: url('../img/pic-second-section.jpg') right no-repeat;
-  justify-content: center;
-  -webkit-justify-content: center;
-  background-size: contain;
-  width: 40vw;
-  margin-top: 10vw;
-  margin-bottom: -2vw;
-  height: 50vw;
-}
-
-.third-section {
-  display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
-  display: -ms-flexbox;  /* TWEENER - IE 10 */
-  display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
-  display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
-  flex-direction: column;
-  -webkit-flex-direction: column;
-  justify-content: center;
-  -webkit-justify-content: center;
-  background: #64aaa3;
-  width: 100vw;
-  overflow: hidden;
-}
-
-
-.jump {
-  display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
-  display: -ms-flexbox;  /* TWEENER - IE 10 */
-  display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
-  display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
-  justify-content: flex-end;
-  -webkit-justify-content: flex-end;
-  align-self: center;
-  -webkit-align-self: center;
-  background-image: url('../img/jump.png');
-  background-size: contain;
-  background-repeat: no-repeat;
-  width: 50vw;
-  height: 20vw;
-  overflow: hidden;
-  border-bottom: 1px solid white;
-}
-
-.jump .icons {
-  display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
-  display: -ms-flexbox;  /* TWEENER - IE 10 */
-  display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
-  display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
-  flex-direction: column;
-  -webkit-flex-direction: column;
-  height: 16vw;
-  width: 5vw;
-  align-self: flex-end;
-  -webkit-align-self: flex-end;
-  margin-right: 8vw;
-  font-size: 2.5vw;
-  justify-content: space-around;
-  -webkit-justify-content: space-around;
-}
-
-.jump .icons a div {
-  display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
-  display: -ms-flexbox;  /* TWEENER - IE 10 */
-  display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
-  display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
-  align-self: center;
-  -webkit-align-self: center;
-}
-
-.jump .icons a div.fa-soundcloud span {
-  font-size: 1vw;
-  align-self: center;
-  -webkit-align-self: center;
-}
-
-p {
-  align-self: center;
-  -webkit-align-self: center;
-  font-family: 'Roboto', sans-serif;
-  font-size: 1.5vw;
-}
-
-
-.projects {
-  display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
-  display: -ms-flexbox;  /* TWEENER - IE 10 */
-  display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
-  display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
-  justify-content: space-around;
-  -webkit-justify-content: space-around;
-  align-self: center;
-  -webkit-align-self: center;
-  width: 80vw;
-  height: 20vw;
-  margin-bottom: 10vw;
-}
-
-.projects a p {
-  border: none;
-  font-size: 1vw;
-  margin-left: 4.5vw;
-}
-
-.dela {
-  display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
-  display: -ms-flexbox;  /* TWEENER - IE 10 */
-  display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
-  display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
-  width: 15vw;
-  height: 15vw;
-  background: white url('../img/dela.jpg') right no-repeat;
-  background-size: contain;
-  border-radius: 100%;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.22), inset 0 -2px 0 rgba(0, 0, 0, 0.2);
-  overflow: hidden;
-}
-
-.guessthatsong {
-  display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
-  display: -ms-flexbox;  /* TWEENER - IE 10 */
-  display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
-  display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
-  width: 15vw;
-  height: 15vw;
-  background: url('../img/guessthatsong.png') center no-repeat;
-  background-size: cover;
-  border-radius: 100%;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.22), inset 0 -2px 0 rgba(0, 0, 0, 0.2);
-  overflow: hidden;
-}
-
-.memorygame {
-  display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
-  display: -ms-flexbox;  /* TWEENER - IE 10 */
-  display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
-  display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
-  width: 15vw;
-  height: 15vw;
-  background: url('../img/memorygame.png') center no-repeat;
-  background-size: cover;
-  border-radius: 100%;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.22), inset 0 -2px 0 rgba(0, 0, 0, 0.2);
-  overflow: hidden;
+  padding: 5px 0;
+  margin: 10px 0;
 }
 
 footer {
@@ -397,29 +123,4 @@ footer div {
   justify-content: center;
   -webkit-justify-content: center;
   min-width: 20vw;
-}
-
-@media only screen and (max-width: 490px) {
-  .first-section .first-pic {
-    background: url(../img/pic-first-section.jpg) right no-repeat;
-    background-size: contain;
-    height: 70vh;
-    margin: 20px 0 0 -40px;
-  }
-
-  .first-section .content {
-    padding: 0;
-  }
-
-  .first-section .content li {
-    width: 93%;
-  }
-
-  #first { font-size: 25.4px }
-  #second { font-size: 23.8px }
-  #third-a { font-size: 30.2px }
-  #third-b { font-size: 24.4px }
-  #fourth { font-size: 16px }
-  #fifth { font-size: 15px }
-  #fifth span { font-size: 20px }
 }
