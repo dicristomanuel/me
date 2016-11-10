@@ -18,6 +18,8 @@ a {
   height: 100vh;
   width: 100vw;
   display: flex;
+  min-height: 610px;
+  transition: all 100ms ease;
 }
 
 .first-section-content {
@@ -25,65 +27,100 @@ a {
   width: 90%;
   margin: 0 auto;
   align-self: center;
+  justify-content: center;
 }
 
 .first-section-content .first-pic {
-  background: url(../img/pic-first-section.jpg) no-repeat;
-  background-size: contain;
-  width: 50%;
-  height: 550px;
-  background: yellow;
+  height: 570px;
 }
 
 .first-section-content .content {
   list-style-type: none;
-  width: 50%;
-  background: orange;
+  width: 320px;
   margin: 0;
   padding: 0;
+  text-align: -webkit-center;
 }
 
 .first-section-content .content li {
-
+  width: 260px;
 }
 
-#first { font-size: 6.2vw }
+#first { font-size: 31.5px }
 
 #second {
   color: #FF2D88;
   font-weight: bold;
-  font-size: 5.5vw;
+  font-size: 28.1px;
 }
 
 #third-a {
-  font-size: 7.4vw;
-  margin-top: -4px;
-}
-
-#third-b {
-  font-size: 7.6vw;
-  letter-spacing: 2.5vw;
+  font-size: 37.9px;
   margin-top: -7px;
 }
 
+#third-b {
+  font-size: 30.5px;
+  margin-top: -6px;
+}
+
 #fourth {
-  font-size: 4.1vw;
+  font-size: 18px;
   text-align: justify;
 }
 
 #fifth {
-  font-size: 4.2vw;
+  font-size: 17px;
   text-align: justify;
 }
 
 #fifth span {
-  font-size: 4.8vw;
+  font-size: 24.6px;
   letter-spacing: 0.5px;
 }
 
-@media only screen and (min-width: 550px) {
-  .first-section-content {
-    width: 70%;
-    max-width:
+.content .socials{
+  display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+  display: -ms-flexbox;  /* TWEENER - IE 10 */
+  display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+  display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
+  justify-content: space-around;
+  -webkit-justify-content: space-around;
+  font-size: 25px;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  padding: 5px 0;
+  margin: 10px 0;
+}
+
+@media only screen and (max-width: 450px) {
+  .first-section-content .content {
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
   }
+
+  .first-section-content .first-pic {
+    height: 370px;
+    position: absolute;
+    top: 620px;
+    right: 0;
+    opacity: .6;
+  }
+
+  .first-section-content .content li {
+    width: 260px;
+  }
+
+  .content .socials{
+    font-size: 35px;
+  }
+
+  #first   { font-size: 31.4px }
+  #second  { font-size: 28px }
+  #third-a { font-size: 37.7px }
+  #third-b { font-size: 30.4px }
+  #fourth  { font-size: 17px }
+  #fifth   { font-size: 17px }
+  #fifth span { font-size: 24.5px }
 }
