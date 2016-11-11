@@ -124,3 +124,9 @@ a {
   #fifth   { font-size: 17px }
   #fifth span { font-size: 24.5px }
 }
+
+@media all and (orientation:landscape) {
+  .first-section {
+
+  }
+}
