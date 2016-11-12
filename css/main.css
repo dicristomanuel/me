@@ -36,6 +36,7 @@ a {
   -ms-flex-pack: center;
   justify-content: center;
 
+  transition: all 100ms ease;
   width: 90%;
   margin: 0 auto;
 }
@@ -104,12 +105,6 @@ a {
 }
 
 .second-section {
-  display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
-  display: -ms-flexbox;  /* TWEENER - IE 10 */
-  display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
-  display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
-  justify-content: flex-end;
-  -webkit-justify-content: flex-end;
   width: 100vw;
   height: 100vh;
   position: relative;
@@ -117,20 +112,71 @@ a {
   overflow: hidden;
 }
 
-.me-second {
-  display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
-  display: -ms-flexbox;  /* TWEENER - IE 10 */
-  display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
-  display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
-  background: url('../img/pic-second-section.jpg') right no-repeat;
-  justify-content: center;
-  -webkit-justify-content: center;
+.second-pic {
+  background: url(../img/pic-second-section.jpg) right bottom no-repeat;
   background-size: contain;
   width: 40vw;
   height: 50vw;
-  position: absolute;
-  bottom: -20px;
+  align-self: flex-end;
 }
+
+.second-section-content {
+  display: flex;
+  justify-content: space-around;
+  height: inherit;
+}
+
+.second-section-content .content {
+  list-style-type: none;
+  width: 320px;
+}
+
+.second-section-content .content li {
+  width: 260px;
+}
+
+#sixth { font-size: 31.5px }
+
+#seventh {
+  color: #FF2D88;
+  font-weight: bold;
+  font-size: 28.1px;
+}
+
+#eight-a {
+  font-size: 37.9px;
+  margin-top: -7px;
+}
+
+#eight-b {
+  font-size: 30.5px;
+  margin-top: -6px;
+}
+
+#ninth {
+  font-size: 18px;
+  text-align: justify;
+}
+
+#tenth {
+  font-size: 17px;
+  text-align: justify;
+}
+
+#fifth span {
+  font-size: 24.6px;
+  letter-spacing: 0.5px;
+}
+
+
+
+
+
+
+
+
+
+
 
 @media only screen and (max-width: 740px) {
   .first-section-content .content {
