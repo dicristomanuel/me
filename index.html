@@ -9,6 +9,10 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 </head>
 <body>
+  <div class="landscape-hint">
+    <p>Enjoy more content in landscape mode</p>
+    <img src="img/landscape.png">
+  </div>
   <div class="first-section">
     <div class="first-section-content">
       <img src="img/pic-first-section.jpg" class="first-pic">
@@ -75,5 +79,20 @@
     <a href="#">MANUEL DI CRISTO</a>
     <div class="fa fa-envelope-o"> <a href="mailto:dicristomanuel@icloud.com"> dicristomanuel@icloud.com</a></div>
   </footer>
+
+  <script type="text/javascript">
+  var detectUserAgent = function() {
+    return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+  }
+
+  if(detectUserAgent() && window.innerHeight > window.innerWidth){
+    setTimeout(function() {
+      document.querySelector(".landscape-hint").style.marginTop = 0;
+    }, 500);
+    setTimeout(function() {
+      document.querySelector(".landscape-hint").style.marginTop = "-70px";
+    }, 2500);
+  }
+  </script>
 </body>
 </html>

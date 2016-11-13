@@ -17,6 +17,27 @@ a {
   text-decoration: none;
 }
 
+.landscape-hint {
+  background: black;
+  display: flex;
+  justify-content: space-around;
+  position: fixed;
+  width: 100%;
+  margin-top: -70px;
+  z-index: 99;
+  transition: all 500ms ease;
+}
+
+.landscape-hint p {
+  font-size: 15px;
+  color: gray;
+}
+
+.landscape-hint img {
+  width: 65px;
+  height: 65px;
+}
+
 .first-section {
   background: black;
   height: 100vh;
@@ -140,6 +161,7 @@ a {
   width: 100vw;
   height: 100vh;
   min-height: 750px;
+  max-width: 1400px;
 }
 
 .second-section-content .content {
