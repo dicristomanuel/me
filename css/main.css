@@ -6,6 +6,7 @@ body {
   font-family: 'Open Sans', sans-serif;
   color: #eeeded;
   background: #64aaa3;
+  overflow-x: hidden;
 }
 
 a {
@@ -19,6 +20,7 @@ a {
   width: 100vw;
   min-height: 610px;
   transition: all 100ms ease;
+  padding: 20px 0;
 
   display: -webkit-box;
   display: -ms-flexbox;
@@ -36,7 +38,6 @@ a {
   -ms-flex-pack: center;
   justify-content: center;
 
-  transition: all 100ms ease;
   width: 90%;
   margin: 0 auto;
 }
@@ -57,7 +58,7 @@ a {
   width: 260px;
 }
 
-#first { font-size: 31.5px }
+#first { font-size: 31.4px }
 
 #second {
   color: #FF2D88;
@@ -71,7 +72,7 @@ a {
 }
 
 #third-b {
-  font-size: 30.5px;
+  font-size: 30.4px;
   margin-top: -6px;
 }
 
@@ -105,52 +106,72 @@ a {
 }
 
 .second-section {
-  width: 100vw;
-  height: 100vh;
+  overflow: hidden;
   position: relative;
   background: #404040;
-  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  transition: all 100ms ease;
 }
 
 .second-pic {
   background: url(../img/pic-second-section.jpg) right bottom no-repeat;
-  background-size: contain;
-  width: 40vw;
-  height: 50vw;
+  background-size: cover;
+  width: 383px;
+  height: 480px;
   align-self: flex-end;
+  margin-bottom: -30px;
 }
 
 .second-section-content {
   display: flex;
   justify-content: space-around;
   height: inherit;
+  width: 100vw;
+  height: 100vh;
 }
 
 .second-section-content .content {
   list-style-type: none;
   width: 320px;
+  align-self: center;
 }
 
 .second-section-content .content li {
-  width: 260px;
+  width: 290px;
+  margin: 0 auto;
 }
 
-#sixth { font-size: 31.5px }
+.separator {
+  border-top: 1px solid darkgray;
+  width: 290px;
+  height: 1px;
+  margin: 13px auto;
+}
 
-#seventh {
-  color: #FF2D88;
+#sixth-a {
+  font-size: 29.2px;
   font-weight: bold;
-  font-size: 28.1px;
 }
 
-#eight-a {
-  font-size: 37.9px;
-  margin-top: -7px;
+#sixth-d {
+  font-size: 27.9px;
+  font-weight: bold;
+  margin-top: -10px;
+
 }
 
-#eight-b {
-  font-size: 30.5px;
-  margin-top: -6px;
+#sixth-b {
+  font-size: 17.9px;
+  margin-top: -2px;
+  margin-bottom: 12px;
 }
 
 #ninth {
@@ -158,24 +179,59 @@ a {
   text-align: justify;
 }
 
+#sixth-c {
+  font-size: 18.2px;
+  text-align: justify;
+}
+
+#sixth-f {
+  font-size: 17.5px;
+  text-align: justify;
+  margin-top: 10px;
+  font-weight: lighter;
+}
+
+#eight {
+  color: #61dafb;
+  font-size: 27.4px;
+  font-weight: bold;
+  text-align: justify;
+  line-height: 27px;
+}
+
+#eight-b {
+  color: #61dafb;
+  font-size: 36.4px;
+  font-weight: bold;
+  text-align: justify;
+  margin-top: -10px;
+}
+
 #tenth {
+  color: #61dafb;
+  font-size: 17px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 20px;
+  text-decoration: underline;
+  cursor:pointer;
+  transition: all 100ms ease;
+}
+
+#tenth:hover {
+  opacity: .8;
+  transform: scale(1.03,1.03);
+}
+
+#eleventh {
   font-size: 17px;
   text-align: justify;
 }
 
-#fifth span {
+#eleventh span {
   font-size: 24.6px;
   letter-spacing: 0.5px;
 }
-
-
-
-
-
-
-
-
-
 
 
 @media only screen and (max-width: 740px) {
@@ -204,4 +260,184 @@ a {
   #fourth  { font-size: 17px }
   #fifth   { font-size: 17px }
   #fifth span { font-size: 24.5px }
+
+  .second-pic {
+    display: none;
+  }
+
+  .second-section-content {
+    width: initial;
+    height: initial;
+    padding: 20px 0;
+  }
+
+  .second-section-content .content {
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .third-section .jump {
+    padding: 10px;
+  height: initial;
+  }
+
+  .third-section .jump .third-pic {
+    display: none;
+  }
+
+  .third-section .jump .icons {
+    display: flex;
+    height: 50px;
+    font-size: 30px;
+    align-items: center;
+    flex-direction: row;
+    width: 50%;
+    justify-content: space-around;
+  }
+
+  .third-section .projects {
+    width: 90%;
+  }
+}
+
+.third-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background: #649893;
+  width: 100vw;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+
+.jump {
+  display: flex;
+  justify-content: space-around;
+  align-self: center;
+  width: 490px;
+  height: 250px;
+  overflow: hidden;
+  border-bottom: 1px solid white;
+}
+
+.jump .third-pic {
+  background-image: url(../img/jump.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 250px;
+  width: 360px;
+}
+
+.jump .icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  -webkit-flex-direction: column;
+  height: 200px;
+  align-self: flex-end;
+  -webkit-align-self: flex-end;
+  font-size: 30px;
+  justify-content: space-around;
+  -webkit-justify-content: space-around;
+}
+
+.jump .icons a div {
+  display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+  display: -ms-flexbox;  /* TWEENER - IE 10 */
+  display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+  display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
+  align-self: center;
+  -webkit-align-self: center;
+}
+
+.jump .icons a div.fa-soundcloud span {
+  font-size: 1vw;
+  align-self: center;
+  -webkit-align-self: center;
+}
+
+p {
+  align-self: center;
+  -webkit-align-self: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+}
+
+.projects {
+  display: flex;
+  justify-content: space-around;
+  align-self: center;
+  flex-direction: column;
+  align-items: center;
+  width: 70%;
+}
+
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 650px;
+}
+
+.list .project {
+  width: 150px;
+  height: 150px;
+  margin: 20px;
+
+  border-radius: 100%;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.22), inset 0 -2px 0 rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+.projects a p {
+  border: none;
+  font-size: 1vw;
+  margin-left: 4.5vw;
+}
+
+.dela {
+  background: white url('../img/dela.jpg') right no-repeat;
+  background-size: cover;
+}
+
+.guessthatsong {
+  background: url('../img/guessthatsong.png') center no-repeat;
+  background-size: cover;
+}
+
+.memorygame {
+  background: url('../img/memorygame.png') center no-repeat;
+  background-size: cover;
+}
+
+footer {
+  display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+  display: -ms-flexbox;  /* TWEENER - IE 10 */
+  display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+  display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
+  justify-content: space-around;
+  -webkit-justify-content: space-around;
+  flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  align-items: center;
+  -webkit-align-items: center;
+  background: #64aaa3;
+  border-top: 1px solid white;
+  width: 100vw;
+  height: 5vw;
+  overflow: hidden;
+}
+
+footer div {
+  display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+  display: -ms-flexbox;  /* TWEENER - IE 10 */
+  display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+  display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
+  justify-content: center;
+  -webkit-justify-content: center;
+  min-width: 20vw;
 }
