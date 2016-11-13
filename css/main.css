@@ -111,7 +111,7 @@ a {
 .second-section {
   overflow: hidden;
   position: relative;
-  background: #404040;
+  background: #3f3f3f;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -139,6 +139,7 @@ a {
   height: inherit;
   width: 100vw;
   height: 100vh;
+  min-height: 750px;
 }
 
 .second-section-content .content {
@@ -360,7 +361,13 @@ footer {
 * {
 }
 
-@media only screen and (max-width: 740px) {
+@media only screen and (max-width: 768px) {
+  .second-pic {
+    background-size: contain;
+  }
+}
+
+@media only screen and (max-width: 567px) {
   .first-section-content .content {
     width: 90%;
     margin: 0 auto;
@@ -393,8 +400,6 @@ footer {
 
   .second-section-content {
     width: initial;
-    min-height: 740px;
-    padding: 20px 0;
   }
 
   .second-section-content .content {
