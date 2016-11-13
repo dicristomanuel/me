@@ -3,10 +3,13 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Open Sans', sans-serif;
   color: #eeeded;
   background: #64aaa3;
   overflow-x: hidden;
+}
+
+* {
+  font-family: 'Open Sans', sans-serif;
 }
 
 a {
@@ -233,80 +236,11 @@ a {
   letter-spacing: 0.5px;
 }
 
-
-@media only screen and (max-width: 740px) {
-  .first-section-content .content {
-    width: 90%;
-    margin: 0 auto;
-    position: relative;
-  }
-
-  .first-section-content .first-pic {
-    display: none;
-  }
-
-  .first-section-content .content li {
-    width: 260px;
-  }
-
-  .content .socials{
-    font-size: 35px;
-  }
-
-  #first   { font-size: 31.4px }
-  #second  { font-size: 28px }
-  #third-a { font-size: 37.7px }
-  #third-b { font-size: 30.4px }
-  #fourth  { font-size: 17px }
-  #fifth   { font-size: 17px }
-  #fifth span { font-size: 24.5px }
-
-  .second-pic {
-    display: none;
-  }
-
-  .second-section-content {
-    width: initial;
-    height: initial;
-    padding: 20px 0;
-  }
-
-  .second-section-content .content {
-    margin: 0 auto;
-    padding: 0;
-  }
-
-  .third-section .jump {
-    padding: 10px;
-  height: initial;
-  }
-
-  .third-section .jump .third-pic {
-    display: none;
-  }
-
-  .third-section .jump .icons {
-    display: flex;
-    height: 50px;
-    font-size: 30px;
-    align-items: center;
-    flex-direction: row;
-    width: 50%;
-    justify-content: space-around;
-  }
-
-  .third-section .projects {
-    width: 90%;
-  }
-}
-
 .third-section {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  background: #649893;
   width: 100vw;
-  min-height: 100vh;
   overflow: hidden;
 }
 
@@ -381,6 +315,7 @@ p {
   flex-wrap: wrap;
   justify-content: space-around;
   max-width: 650px;
+  margin-bottom: 20px;
 }
 
 .list .project {
@@ -400,7 +335,7 @@ p {
 }
 
 .dela {
-  background: white url('../img/dela.jpg') right no-repeat;
+  background: white url('../img/dela.jpg') center no-repeat;
   background-size: cover;
 }
 
@@ -415,29 +350,83 @@ p {
 }
 
 footer {
-  display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
-  display: -ms-flexbox;  /* TWEENER - IE 10 */
-  display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
-  display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
+  display: flex;
   justify-content: space-around;
-  -webkit-justify-content: space-around;
-  flex-wrap: wrap;
-  -webkit-flex-wrap: wrap;
-  align-items: center;
-  -webkit-align-items: center;
-  background: #64aaa3;
   border-top: 1px solid white;
-  width: 100vw;
-  height: 5vw;
-  overflow: hidden;
+  height: 40px;
+  align-items: center;
 }
 
-footer div {
-  display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
-  display: -ms-flexbox;  /* TWEENER - IE 10 */
-  display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
-  display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
-  justify-content: center;
-  -webkit-justify-content: center;
-  min-width: 20vw;
+* {
+}
+
+@media only screen and (max-width: 740px) {
+  .first-section-content .content {
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  .first-section-content .first-pic {
+    display: none;
+  }
+
+  .first-section-content .content li {
+    width: 260px;
+  }
+
+  .content .socials{
+    font-size: 35px;
+  }
+
+  #first   { font-size: 31.4px }
+  #second  { font-size: 28px }
+  #third-a { font-size: 37.7px }
+  #third-b { font-size: 30.4px }
+  #fourth  { font-size: 17px }
+  #fifth   { font-size: 17px }
+  #fifth span { font-size: 24.5px }
+
+  .second-pic {
+    display: none;
+  }
+
+  .second-section-content {
+    width: initial;
+    min-height: 740px;
+    padding: 20px 0;
+  }
+
+  .second-section-content .content {
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .third-section .jump {
+    padding: 10px;
+    height: initial;
+  }
+
+  .third-section .jump .third-pic {
+    display: none;
+  }
+
+  .third-section .jump .icons {
+    display: flex;
+    height: 50px;
+    font-size: 30px;
+    align-items: center;
+    flex-direction: row;
+    width: 50%;
+    justify-content: space-around;
+  }
+
+  .third-section .projects {
+    width: 90%;
+  }
+
+  footer {
+    height: 60px;
+    flex-direction: column;
+  }
 }
