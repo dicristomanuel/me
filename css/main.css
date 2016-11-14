@@ -345,6 +345,7 @@ p {
   width: 150px;
   height: 150px;
   margin: 20px;
+  background-size: cover;
 
   border-radius: 100%;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.22), inset 0 -2px 0 rgba(0, 0, 0, 0.2);
@@ -359,17 +360,34 @@ p {
 
 .dela {
   background: white url('../img/dela.jpg') center no-repeat;
-  background-size: cover;
 }
 
 .guessthatsong {
   background: url('../img/guessthatsong.png') center no-repeat;
-  background-size: cover;
 }
 
 .memorygame {
   background: url('../img/memorygame.png') center no-repeat;
-  background-size: cover;
+}
+
+.prism {
+  background: url('../img/prism.jpg') center no-repeat;
+  background-position: top;
+}
+
+.raise-messenger {
+  background: url('../img/raise+messenger.jpg') center no-repeat;
+  background-position: top;
+}
+
+.myby {
+  background: url('../img/myby.jpg') center no-repeat;
+  background-position: top;
+}
+
+.bpop {
+  background: url('../img/bpop.jpg') center no-repeat;
+  background-position: top;
 }
 
 footer {
@@ -378,9 +396,6 @@ footer {
   border-top: 1px solid white;
   height: 40px;
   align-items: center;
-}
-
-* {
 }
 
 @media only screen and (max-width: 768px) {
