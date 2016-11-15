@@ -85,7 +85,7 @@
     return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
   }
 
-  if(detectUserAgent() && window.innerHeight > window.innerWidth){
+  if(detectUserAgent() && window.innerWidth <= 450){
     setTimeout(function() {
       document.querySelector(".landscape-hint").style.marginTop = 0;
     }, 500);
