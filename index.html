@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Manuel Di Cristo</title>
-
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 </head>
@@ -13,6 +12,7 @@
     <p>Enjoy more content in landscape mode</p>
     <img src="img/landscape.png">
   </div>
+  
   <div class="first-section">
     <div class="first-section-content">
       <img src="img/pic-first-section.jpg" class="first-pic">
@@ -35,6 +35,7 @@
       </ul>
     </div>
   </div>
+
   <div class="second-section">
     <div class="second-section-content">
       <ul class="content">
@@ -84,7 +85,6 @@
   var detectUserAgent = function() {
     return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
   }
-
   if(detectUserAgent() && window.innerWidth <= 450){
     setTimeout(function() {
       document.querySelector(".landscape-hint").style.marginTop = 0;
