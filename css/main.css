@@ -302,7 +302,7 @@ a {
 }
 
 .jump .icons a div {
-  display: -webkit-box; 
+  display: -webkit-box;
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
